@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsVOt03G1axBTSj3QkBFSwh0FDY8nkJ80&callback=initMap&libraries=&v=weekly"
+			defer
+		></script>
+		<script src="./map.js"></script>
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Next Bus</title>
+	</head>
+	<body>
+		<h1>Next Bus</h1>
+		<form id="inputForm">
+			<label>Route number <input type="text" name="routeNumber" /></label>
+			<br />
+			<label
+				>Bus Stop ID
+				<div>&ensp;&ensp;#&nbsp;<input type="number" name="stopNumber" /></div>
+			</label>
+			<br />
+			<button type="submit">Enter/Refresh</button>
+		</form>
+		<div id="results"></div>
+		<table id="departureSchedule"></table>
+		<div id="map"></div>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="./inputForm.js"></script>
+	</body>
+</html>

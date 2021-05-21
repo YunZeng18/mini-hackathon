@@ -1,0 +1,39 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+	height: 300px;
+	width: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#inputForm {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+label {
+	display: flex;
+	justify-content: space-between;
+}
+input {
+	width: 80px;
+}
+#departureSchedule {
+	text-align: center;
+	th,
+	td {
+		padding: 15px;
+	}
+}
+#results {
+	text-align: center;
+}
